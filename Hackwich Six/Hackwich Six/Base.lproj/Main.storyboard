@@ -27,7 +27,7 @@
         <!--View Controller-->
         <scene sceneID="5lf-K8-NBn">
             <objects>
-                <viewController id="VQ9-qZ-XXk" sceneMemberID="viewController">
+                <viewController id="VQ9-qZ-XXk" customClass="ViewController" customModule="Hackwich_Six" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mLi-EJ-udg">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -47,8 +47,8 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="VQ9-qZ-XXk" id="j9L-BV-Mlf"/>
-                                    <outlet property="delegate" destination="VQ9-qZ-XXk" id="eIZ-uK-00u"/>
+                                    <outlet property="dataSource" destination="VQ9-qZ-XXk" id="KH7-wX-SVA"/>
+                                    <outlet property="delegate" destination="VQ9-qZ-XXk" id="T6g-lh-Dfg"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -56,6 +56,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="iAM-nL-ytt"/>
+                    <connections>
+                        <outlet property="tableView" destination="Y0s-R9-gPI" id="HDb-5r-ovr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kSs-YD-Tw5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
