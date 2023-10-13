@@ -13,6 +13,7 @@ class secondViewController: UIViewController, UITableViewDataSource, UITabBarDel
     
     
     var placesToTravel = ["Australia", "Korea", "France"]
+    var placesToTravelCities = ["Sydney", "Seoul", "Paris"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return placesToTravel.count
@@ -21,6 +22,7 @@ class secondViewController: UIViewController, UITableViewDataSource, UITabBarDel
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         let text = placesToTravel[indexPath.row]
+        cell.detailTextLabel?.text = placesToTravelCities[indexPath.row]
         cell.textLabel?.text = text
         return cell
 
